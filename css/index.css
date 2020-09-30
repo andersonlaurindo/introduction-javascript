@@ -76,7 +76,7 @@ label{
 	margin-bottom: .2em;
 }
 
-.field{
+.default-field{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
@@ -85,7 +85,7 @@ label{
 	width: 100%;
 }
 
-.middle-field{
+.medium-field{
 	display: inline-block;
 	padding-right: .5em;
 }
@@ -131,4 +131,8 @@ button[disabled=disabled], button:disabled {
 
 .invalid-field{
 	border: 1px solid red;
+}
+
+.invalid-patient {
+	background-color: lightcoral;
 }

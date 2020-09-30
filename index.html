@@ -12,7 +12,7 @@
 
 		<header>
 			<div class="container">
-				<h1>Nutritionist</h1>
+				<h1 class="title">ABC Nutrition</h1>
 			</div>
 		</header>
 		<main>
@@ -69,9 +69,30 @@
 						</tr>
 					</tbody>
 				</table>
-
 			</section>
 		</main>
-
+		<section class="container">
+			<h2 id="form-title">Insert new patient</h2>
+			<form id="insertion-form">
+				<div>
+					<label for="name">Name:</label>
+					<input id="name" name="name" type="text" placeholder="Patient's name" class="default-field">
+				</div>
+				<div class="group">
+					<label for="weight">Weight:</label>
+					<input id="weight" name="weight" type="text" placeholder="Patient's weight" class="default-field medium-field">
+				</div>
+				<div class="group">
+					<label for="height">Height:</label>
+					<input id="height" name="height" type="text" placeholder="Patient's a height" class="default-field medium-field">
+				</div>
+				<div class="group">
+					<label for="fat">Body Fat(%):</label>
+					<input id="fat" type="text" placeholder="Patient's body fat percentual" class="default-field medium-field">
+				</div>
+				<button id="add-patient" class="button main-btn">Insert</button>
+			</form>
+		</section>
+	<script src="js/main.js"></script>
 	</body>
 </html>
