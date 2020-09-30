@@ -18,6 +18,9 @@
 		<main>
 			<section class="container">
 				<h2>Patients</h2>
+
+				<label for="filter">Patient name:</label>
+				<input type="text" name="filter" id="table-filter">
 				<table>
 					<thead>
 						<tr>
@@ -30,7 +33,7 @@
 					</thead>
 					<tbody id="patients-table">
 						<tr class="patient" >
-							<td class="info-name">Paulo</td>
+							<td class="info-name">Paul</td>
 							<td class="info-weight">100</td>
 							<td class="info-height">2.00</td>
 							<td class="info-fat">10</td>
@@ -38,7 +41,7 @@
 						</tr>
 
 						<tr class="patient" >
-							<td class="info-name">João</td>
+							<td class="info-name">Peter</td>
 							<td class="info-weight">80</td>
 							<td class="info-height">1.72</td>
 							<td class="info-fat">40</td>
@@ -46,7 +49,7 @@
 						</tr>
 
 						<tr class="patient" >
-							<td class="info-name">Erica</td>
+							<td class="info-name">Alex</td>
 							<td class="info-weight">54</td>
 							<td class="info-height">1.64</td>
 							<td class="info-fat">14</td>
@@ -54,14 +57,14 @@
 						</tr>
 
 						<tr class="patient">
-							<td class="info-name">Douglas</td>
+							<td class="info-name">Doug</td>
 							<td class="info-weight">85</td>
 							<td class="info-height">1.73</td>
 							<td class="info-fat">24</td>
 							<td class="info-bmi">0</td>
 						</tr>
 						<tr class="patient" >
-							<td class="info-name">Tatiana</td>
+							<td class="info-name">Donald</td>
 							<td class="info-weight">46</td>
 							<td class="info-height">1.55</td>
 							<td class="info-fat">19</td>
@@ -69,10 +72,13 @@
 						</tr>
 					</tbody>
 				</table>
+				<span id="error-search" class="invisible">Search error!</span>
+				<button id="search-patients" class="button main-btn">Search Patients</button>
 			</section>
 		</main>
 		<section class="container">
 			<h2 id="form-title">Insert new patient</h2>
+			<ul id="error-message"></ul>
 			<form id="insertion-form">
 				<div>
 					<label for="name">Name:</label>
@@ -93,6 +99,10 @@
 				<button id="add-patient" class="button main-btn">Insert</button>
 			</form>
 		</section>
-	<script src="js/main.js"></script>
+	<script src="js/calculate-bmi.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/remove-patient.js"></script>
+	<script src="js/filter-patient.js"></script>
+	<script src="js/search-patients.js"></script>
 	</body>
 </html>
